@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="../geni.css">
+  <head>
+    <title>Contato - Geni</title>
+  </head>
+
+  <body class="background-roxo-escuro">
+    <header class="cabecalho">  
+    <p class="texto-cabecalho">IFCE - Campus Maranguape</p>
+      <img class="simbolo-autismo" src="../img/autismosimbolo.png" alt="logo" width="" height="70" class="simbolo-autismo">
+      <nav class="menu">
+    <nav class="menu">
+        <ul class="menu-lista">
+          <li class="item"><a class="item" href="../index.html">Início</a></li>
+          <li class="item"><a class="item" href="./sobre.html">Sobre</a></li>
+          <li class="item"><a class="item" href="./formacao.html">Formação</a></li>
+          <li class="item"><a class="item" href="./disciplinas.html">Disciplina</a></li>
+          <li class="itemselected"><a class="itemselected" href="./contato.html">Contato</a></li>
+        </ul>
+    </nav>
+  </header>
+
+    <main>
+      <section>
+        <h3 class="h3-formulario">Entre em Contato com Geni</h3>
+
+        <form class="formulario" action="/enviar_dados" method="post">
+          <div class="campo-formulario">
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" id="nome" name="nome" required><br><br>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" id="email" name="email" required><br><br>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="assunto">Assunto:</label>
+            <br>
+              <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>-- Selecionar um assunto --</option>
+                <option value="duvidas">Dúvidas sobre o cargo</option>
+                <option value="orientacao">Orientações</option>
+                <option value="outros">Outros Assuntos</option>
+              </select><br><br>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensagem">Mensagem:</label>
+            <br>
+            <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+          </div>
+
+          <div class="botao">
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-paragrafo">@2025 Mariane e Hadriel. Todos os direitos reservados. Projeto acadêmico IFCE - Campus Maranguape.</p>
+    </footer>
+  </body>
+</html>
